@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 1920px;
+    height: 968px;
+    background: #333333;    
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    font-style: normal;
+    font-family: 'Roboto';
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+::selection {
+    background: #f1b7ff; /* Safari */
+}
+::-moz-selection {
+    background: #f1b7ff; /* Firefox */
+}
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background:linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    z-index: 1001;
+  }
+.loaded_hiding .preloader {
+    transition: 2s opacity;
+    opacity: 0;
+} 
+.loaded .preloader {
+    display: none;
+}
+.preloader-3 svg {
+    position: absolute;
+    max-width: 25em;
+    border-radius: 3px;
+    background: transparent;
+    fill: none;
+    stroke: #C89AFC;
+    stroke-linecap: round;
+    stroke-width: 12%;
+    top: 50%;
+    left: 50%;
+    margin:-100px 0 0 -200px;
+}
+.preloader-3 use {
+    stroke: #7C6AFA;
+    animation: preloader-3-a 2s linear infinite;
+}
+@keyframes preloader-3-a {
+    to { 
+        stroke-dashoffset: 0px 
+    } 
+}
+.background{
+    background-image: url(img/bgcC.png);
+    position: absolute;
+    width: 1920px;
+    height: 968px;
+    left: 0px;
+    top: 0px;
+    color: #FFFFFF;
+}
+.background label, input{
+    color: #FFFFFF;
+}
+.firstBlock{
+    position: absolute;
+    width:650px ;
+    height: 580px ;
+    top: 200px;
+    left: 100px;
+    background: transparent;
+    color: #fff;
+}
+.firstBlock h1{
+    font-size: 60px;
+}
+.firstBlock p{
+    margin-top: 30px;
+    font-size: 20px;
+}
+.firstBlock img{
+    position: relative;
+left: -50px;
+top: -20px;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(0deg, rgba(253,187,45,0) 0%, rgba(204,33,255,0.27) 100%);
+}
+header a{
+    position: absolute;
+    top:40px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+.logo{
+    position: absolute;
+    left: 80px;
+    right: 0%;
+    top: 28px;
+    bottom: 0%;
+}
+.main{
+    width: 48px;
+    height: 24px;
+    left: 642px;
+}
+.cours{
+    width: 48px;
+    height: 24px;
+    left: 759px;
+}
+.rasp{
+    width: 90px;
+    height: 24px;
+    left: 863px;
+}
+.teacher{
+    width: 117px;
+    height: 24px;
+    left: 1009px;
+}
+.link{
+    width: 75px;
+    height: 24px;
+    left: 1182px;
+}
+.cont{
+    width: 74px;
+    height: 24px;
+    left: 1313px;
+}
+.enter{
+    font-style: normal;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    position: absolute;
+    left: 1657px;
+    top: 28px;
+    border-radius: 30px;
+    border-style: none;
+    outline: none;
+    text-decoration: none;
+    background:linear-gradient(-94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    transition: all 0.4s;
+}
+.enter::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+    background:linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    border-radius: 30px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.enter:active{ 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    -moz-transform: translatey(3px);
+    -ms-transform: translatey(3px);
+    -webkit-transform: translatey(3px); 
+    -o-transform:translatey(3px); 
+    transform: translatey(3px); 
+  }
+.enter > span{
+    position: relative;
+    z-index: 1;
+}
+
+.enter:hover:after {
+    opacity: 1;
+}
+.secondBlock{
+    position: absolute;
+    width:650px ;
+    height: 580px ;
+    top: 300px;
+    left: 1000px;
+    background: transparent;
+    color: rgb(0, 0, 0);  
+}
+.secondBlock input{
+    position: relative;
+    border-radius: 10px;  
+    margin-top: 10px;
+    font-size: 20px;
+}
+.formName{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+.name{
+    width: 570px;
+    height: 47px;
+    background: transparent;
+    border: #FFFFFF solid 2px;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-top: 5px;
+    font-size: 16px;
+}
+.name:focus {
+    background: transparent;
+    outline: none;
+    border-color: #fff;
+  }
+.nameLB{
+    font-size: 20px;
+    position: absolute;
+    pointer-events: none;
+    left: 15px;
+    right: 15px;
+    top: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 40px;
+    transition: .3s;
+    border-style: none;
+    opacity: 0.25;
+}
+.name:focus~.nameLB,
+.name:not(:focus):valid~.nameLB {
+  top: -2px;
+  font-size: 13px;
+  padding-top: 5px;
+  opacity: 1;
+}
+.formTel{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+.tel{
+    width: 270px;
+    height: 47px; 
+    background: transparent;
+    border: #FFFFFF solid 2px;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-top: 5px;
+    font-size: 16px;
+}
+.tel:focus {
+    background: transparent;
+    outline: none;
+    border-color: #fff;
+  }
+.telLB{
+    font-size: 20px;
+    position: absolute;
+    pointer-events: none;
+    left: 15px;
+    right: 15px;
+    top: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 40px;
+    transition: .3s;
+    border-style: none;
+    opacity: 0.25;
+}
+.tel:focus~.telLB,
+.tel:not(:focus):valid~.telLB {
+  top: -2px;
+  font-size: 13px;
+  padding-top: 5px;
+  opacity: 1;
+}
+.formEmail{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+.email{
+    width: 270px;
+    height: 47px;
+    background: transparent;
+    border: #FFFFFF solid 2px;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-top: 5px;
+    font-size: 16px;
+}
+.email:focus {
+    background: transparent;
+    outline: none;
+    border-color: #fff;
+  }
+.emailLB{
+    font-size: 20px;
+    position: absolute;
+    pointer-events: none;
+    left: 15px;
+    right: 15px;
+    top: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 40px;
+    transition: .3s;
+    border-style: none;
+    opacity: 0.25;
+}
+.email:focus~.emailLB,
+.email:not(:focus):valid~.emailLB {
+  top: -2px;
+  font-size: 13px;
+  padding-top: 5px;
+  opacity: 1;
+}
+.formMes{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+.message:focus~.messageLB,
+.message:not(:focus):valid~.messageLB {
+  top: -2px;
+  font-size: 13px;
+  padding-top: 5px;
+  opacity: 1;
+}
+.message{
+    width: 570px;
+    height: 75px;
+    border-radius: 10px;
+    margin-top: 10px;
+    background: transparent;
+    border: #FFFFFF solid 2px;
+    padding-left: 15px;
+    padding-top: 20px;
+    font-size: 16px;
+    resize: vertical;
+    color: #FFFFFF;
+    font-style: normal;
+    font-family: 'Roboto';
+}
+.messageLB{
+    font-size: 20px;
+    position: absolute;
+    pointer-events: none;
+    left: 15px;
+    right: 15px;
+    top: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 40px;
+    transition: .3s;
+    border-style: none;
+    opacity: 0.25;
+}
+.message::-webkit-scrollbar {
+    width: 0px;
+  }
+.message::-webkit-scrollbar-track {
+background: transparent; 
+}
+.message::-webkit-scrollbar-thumb {
+background-color:transparent ;
+}
+.sendMessage{
+    left: 340px;
+    width: 250px;
+    height: 50px;
+    background:linear-gradient(45.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    border-style: none;
+    cursor: pointer;
+    transition:all 1s;
+    color: #FFFFFF;
+}
+.sendMessage:active{ 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    -moz-transform: translatey(3px);
+    -ms-transform: translatey(3px);
+    -webkit-transform: translatey(3px); 
+    -o-transform:translatey(3px); 
+    transform: translatey(3px); 
+  }
+.thirdBlock{
+    position: absolute;
+    width:390px ;
+    height: 100px ;
+    top: 750px;
+    left: 800px;
+}
+.thirdBlock p{
+    margin-top: 10px;
+}
+.fouthBlock{
+    position: absolute;
+    width:390px ;
+    height: 100px ;
+    top: 750px;
+    left: 1300px;
+}
+.fouthBlock p{
+    margin-top: 10px;
+}

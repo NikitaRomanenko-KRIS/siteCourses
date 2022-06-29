@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styleCont.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <title>Контакты</title>
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader-3">
+            <svg viewBox="-2000 -1000 4000 2000">
+                <path id="inf" d="M354-354A500 500 0 1 1 354 354L-354-354A500 500 0 1 0-354 354z"></path>
+                <use xlink:href="#inf" stroke-dasharray="1570 5143" stroke-dashoffset="6713px"></use>
+            </svg>
+        </div>   
+    </div>
+    <div class="background">
+        <header>
+            <svg class="logo" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M39.9023 37.3864L38.2047 31.3961C37.8701 30.2157 37.9309 28.9531 38.4116 27.8244C39.5251 25.2111 40.097 22.3149 39.9875 19.2726C39.6103 8.70976 30.9276 0.19135 20.3617 0.00272783C9.0292 -0.198063 -0.198063 9.0292 0.00272783 20.3617C0.19135 30.9276 8.70976 39.6103 19.2695 39.9875C21.9285 40.0818 24.4749 39.6559 26.8205 38.8041C28.6885 38.1256 30.7177 38.01 32.6282 38.5546L37.3803 39.9054C38.9166 40.3435 40.3374 38.9227 39.9023 37.3864ZM11.0645 19.9997C11.0645 15.0651 15.0651 11.0645 19.9997 11.0645C24.9343 11.0645 28.9349 15.0651 28.9349 19.9997C28.9349 24.9343 24.9343 28.9349 19.9997 28.9349C15.0651 28.9349 11.0645 24.9343 11.0645 19.9997Z" fill="url(#paint0_linear_10103_7)"/>
+                <path d="M37.8917 29.0203C37.8917 29.0203 37.8217 28.7982 37.6848 28.4027C36.62 25.3848 31.442 12.3181 21.2047 11.1499C25.5704 11.7371 28.9352 15.476 28.9352 19.9999C28.9352 24.9345 24.9346 28.9351 20 28.9351V39.9969C22.3943 39.9969 24.6912 39.5801 26.8208 38.8073C28.6888 38.1289 30.718 38.0133 32.6285 38.5579L37.3806 39.9086C38.917 40.3437 40.3377 38.926 39.9027 37.3866L38.2051 31.3963C38.0043 30.6936 37.9495 29.9573 38.0377 29.2424L37.8917 29.0203Z" fill="url(#paint1_linear_10103_7)"/>
+                <defs>
+                <linearGradient id="paint0_linear_10103_7" x1="4.85174" y1="-0.000474682" x2="40.3752" y2="2.96995" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#C89AFC"/>
+                <stop offset="1" stop-color="#7C6AFA"/>
+                </linearGradient>
+                <linearGradient id="paint1_linear_10103_7" x1="22.4239" y1="11.1499" x2="40.2336" y2="12.1815" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#C89AFC"/>
+                <stop offset="1" stop-color="#7C6AFA"/>
+                </linearGradient>
+                </defs>
+            </svg>
+            <label><a class="main" id="a" href="index.html">Главная</a></label>
+            <label><a class="cours" id="a" href="#">Курсы</a></label>
+            <label><a class="rasp" id="a" href="#">Расписание</a></label>
+            <label><a class="teacher" id="a" href="#">Преподаватели</a></label>
+            <label><a class="link" id="a" href="#">Рассылка</a></label>
+            <label><a class="cont" id="a" href="#">Контакты</a></label> 
+            <a href="#" class="enter"><span>Зайти в кабинет</span></a>   
+        </header>
+        <div class="firstBlock">
+            <h1>Свяжитесь с нами</h1>
+            <p>Вы можете написать нам по любому интересующему вас вопросу: от обучения, до сотрудничества.</p>
+            <img class="phones" src="img/phones.png" alt="phones">
+        </div>
+        <div class="secondBlock">
+            <form id="form" action="send.php" method="post">
+            <div class="formName">
+                <input class="name" autocomplete="off" name="name" minlength="1" type="text" required>
+                <label class="nameLB">Имя</label>
+            </div>
+            <div class="formTel">
+                <input class="tel" autocomplete="off" name="tel" id="phone" type="text" required>
+                <label class="telLB">Телефон</label>
+            </div>
+            <div class="formEmail">
+            <input class="email" autocomplete="off" name="email" type="email" minlength="1"  required>
+            <label class="emailLB">e-mail</label>
+            </div>
+            <div class="formMes">
+            <textarea class="message" autocomplete="off" name="message" minlength="1" required autocorrect="on"></textarea>
+            <label class="messageLB">Сообщение</label>
+            </div>
+            <input class="sendMessage" type="submit" value="Отправить сообщение">
+            </form>
+        </div>
+        <div class="thirdBlock">
+            <h2>Юридический адрес</h2>
+            <p>121205, г. Москва, Территория инновационного центра Сколково, Большой б-р, д. 42, стр. 1, этаж 0,
+                пом. 150, раб. 3</p>
+        </div>
+        <div class="fouthBlock">
+            <h2>Реквизиты</h2>
+            <p>Р/cчет 40702810610000508370 в АО «Тинькофф Банк»<br>
+                БИК 044525974<br>
+                К/сч 30101810145250000974<br>
+                ОГРН 1177746566140 от 07.06.2017<br>
+                ИНН 9701078611<br>
+                КПП 773101001</p>
+        </div>
+    </div> 
+    <script src="js/jquery-3.6.0.slim.js"></script>  
+    <script src="js/jquery.maskedinput.min.js"></script>  
+    <script>
+        window.onload = function () {
+        document.body.classList.add('loaded_hiding');
+        window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+        }, 1500);
+    }
+    $(function(){
+    $("#phone").mask("8(999) 999-9999");
+    
+    });
+    </script>
+</body>
+</html>
